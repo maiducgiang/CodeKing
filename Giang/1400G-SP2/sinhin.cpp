@@ -16,56 +16,29 @@ void sang(){
 }
 void createTest(ofstream &fout)
 {
-    int o = Create(1, 10);
-    fout << o << endl;
-    for(int l = 1; l <= o; l++){
-    	int T = Create(1, 10);
-	    fout << T << endl;
-	    for(int i = 1; i <= T; i++){
-	        int N = Create(1, 1000);
-	        
-	        fout << Create(1, N) << " ";
-	       
-	        
-	    }
-	    fout << endl;
-	}
+    long long N = Create(1, 10000);
+	long long l = sqrt(N) ,M = Create(sqrt(l), l);
+        
+    fout << N << " "<< M;
+        
+    
+	    
 }
 //sinh test vua
 void createTest2(ofstream &fout)
 {
-    int o = Create(1, 10);
-    fout << o << endl;
-    for(int l = 1; l <= o; l++){
-    	int T = Create(10, 100);
-	    fout << T << endl;
-	    for(int i = 1; i <= T; i++){
-	        int N = Create(1000, 1000000);
-	        
-	        fout << Create(1000, N) << " ";
-	        
-	        
-	    }
-	    fout << endl;
-	}
+    long long N = Create(10000000, 10000000000);
+	long long l = sqrt(N) ,M = Create(sqrt(l), l);
+        
+    fout << N << " "<< M;
 }
 //sinh test lon
 void createTest3(ofstream &fout)
 {
-    int o = Create(1, 10);
-    fout << o << endl;
-    for(int l = 1; l <= o; l++){
-    	int T = Create(90, 100);
-	    fout << T << endl;
-	    for(int i = 1; i <= T; i++){
-	        int N = Create(1000000, 1000000000);
-	        
-	        fout << Create(1000000, N) << " ";
-	        
-	        
-	    }
-	    fout << endl;
-	}
+    long long N = Create(10000000000000, 1000000000000000);
+	long long l = sqrt(N) ,M = Create(sqrt(l), l);
+        
+    fout << N << " "<< M;
 }
 
 //cho nay khong can sua
